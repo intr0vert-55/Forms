@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            background-color: grey;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .lmao{
+            text-align: center;
+            padding: 10%;
+            background-color: grey;
+        }
+        .but{
+            border: 0;
+            border-radius: 15px;
+            padding: 2%;
+            background-color: black;
+            color: whitesmoke;
+            cursor: pointer;
+        }
+        .but:hover{
+            background-color: whitesmoke;
+            color: black;
+            box-shadow: 5% 10% rgb(rgb(81, 81, 81), green, blue);
+            transition-duration: 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <form action="" class = "lmao">
+            <h1>Fill the form</h1>
+            <label for="Fname" style="padding-right: 70px;">First Name :</label>
+            <input type="text" name = "Fname"><br><br>
+            <label for="Lname" style="padding-right: 70px;">Last Name :</label>
+            <input type="text" name = "Lname"><br><br>
+            <label for="dob" style="padding-right: 100px;">Date Of Birth :</label>
+            <input type="date" name = "dob" style="padding-right: 0%;"><br><br>
+            <label for="em" style="padding-right:95px;">Email :</label>
+            <input type="email" name="em" id=""><br><br>
+            <label for="pass" style="padding-right: 75px;">Password :</label>
+            <input type="password" name="pass"><br><br>
+            <input type="button" value="Submit" class="but">
+        </form>
+    </div>
+</body>
+</html>
